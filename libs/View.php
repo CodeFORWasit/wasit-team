@@ -2,7 +2,7 @@
 
 class View {
         
-    public $_title = "Shop";
+    public $_title = "ًWasite Team";
     public $_argv = array();
     
     
@@ -20,7 +20,7 @@ class View {
     }
     
     function _static($name){
-        return "/shoping/public/".$name;
+        return "/wasit-team/public/".$name;
     }
 
     function redirect($path){

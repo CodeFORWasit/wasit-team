@@ -1,0 +1,38 @@
+.member-1 {
+    background-image: url("../img/team/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--fontMirza);
+}
+
+
+.main-section{
+    border:1px solid #138496;
+    background-color: #fff;
+}
+.profile-header {
+    background-repeat:round;
+    height:150px;
+}
+.user-detail{
+    margin:-50px 0px 30px 0px;
+}
+.user-detail img{
+    height:100px;
+    width:100px;
+}
+.user-detail h5{
+    margin:15px 0px 5px 0px;
+}
+.user-social-detail{
+2    background-color: #333;
+}
+.user-social-detail a i{
+    color:#fff;
+    font-size:23px;
+    padding: 10px 0px 0px 10px;
+}
+
+.user-social-detail a {
+    margin-left: 10px;
+}

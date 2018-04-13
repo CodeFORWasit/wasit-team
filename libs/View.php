@@ -24,7 +24,7 @@ class View {
     }
 
     function redirect($path){
-        header("Location:/shoping/$path");
+        header("Location:/wasit-team/$path");
     }
     
 }

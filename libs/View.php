@@ -1,8 +1,9 @@
-<?php
 
+
+<?php
 class View {
         
-    public $_title = "Shop";
+    public $_title = "ًWasite Team";
     public $_argv = array();
     
     
@@ -16,15 +17,13 @@ class View {
         if ($_foter != null){
             require 'view/'.$_foter.".php";
         }
-
     }
     
     function _static($name){
-        return "/shoping/public/".$name;
+        return "/wasit-team/public/".$name;
     }
-
     function redirect($path){
-        header("Location:/shoping/$path");
+        header("Location:/wasit-team/$path");
     }
     
 }

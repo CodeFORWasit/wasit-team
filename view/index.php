@@ -48,7 +48,7 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-code-branch fa-stack-1x"></i>
+                        <i class="fas fa-code-branch fa-stack-1x" style="color:white"></i>
                     </span>
                     <h4 class="service-heading">الحلول البرمجية</h4>
                     <p class="text-muted" dir="rtl">نقدم كل مايخص المواطن الواسطي وجميع الامور التي تسهل الحياة ونسعى لتحشيد كافة الطاقات من اجل خدمة شعب
@@ -58,17 +58,17 @@
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fab fa-github fa-stack-1x"></i>
+                        <i class="fab fa-github fa-stack-1x" style="color:white"></i>
                     </span>
                     <h4 class="service-heading">مشاريع مفتوحة المصدر</h4>
-                    <p class="text-muted" dir="rtl">جميع المشاريع التي نقدمها هي مشاريع مفتوحة المصدر يمكن لجميع من يحتاجها اعادةاستخدامها لخدمة ابناء وطنة
+                    <p class="text-muted" dir="rtl">جميع المشاريع التي نقدمها هي مشاريع مفتوحة المصدر يمكن لجميع من يحتاجها اعادةاستخدامها لخدمة ابناء وطنه
                         مجانا
                     </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fas fa-lock fa-stack-1x "></i>
+                        <i class="fas fa-lock fa-stack-1x " style="color:white"></i>
                     </span>
                     <h4 class="service-heading">التدريب المستمر</h4>
                     <p class="text-muted" dir="rtl">نضمن التدريب المستمر لجميع اعضاء الفريق وفق اخر التقنيات واطر العمل ونسعى لتحقيق فريق متكامل يتمكن جميع

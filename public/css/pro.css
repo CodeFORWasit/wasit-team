@@ -1,0 +1,193 @@
+:root {
+    --main-color: #00494e;
+    --sec: #42a7fa;
+    --font: rgb(170, 221, 255);
+    --fontChanga: 'Changa', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --fontElMessiri: 'El Messiri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --fontMirza: 'Amiri', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.container1 {
+    background: linear-gradient(-90deg, rgb(175, 223, 255), rgb(193, 200, 206));
+    display: flex;
+    --c: rgba(255, 255, 255, 0.03);
+    --t: transparent;
+    background-image: repeating-linear-gradient(45deg, var(--c) 0, var(--c) 20px, var(--t) 20px, var(--t) 32px, var(--c) 32px, var(--c) 44px, var(--t) 44px, var(--t) 56px, var(--c) 56px, var(--c) 68px, var(--t) 68px, var(--t) 80px, var(--c) 0), repeating-linear-gradient(-45deg, var(--c) 0, var(--c) 20px, var(--t) 20px, var(--t) 32px, var(--c) 32px, var(--c) 44px, var(--t) 44px, var(--t) 56px, var(--c) 56px, var(--c) 68px, var(--t) 68px, var(--t) 80px, var(--c) 0), linear-gradient(to bottom right, rgb(170, 216, 253), rgb(10, 170, 191));
+    width: 100%;
+}
+
+.container1 .side0 {
+    display: flex;
+    width: auto;
+    /* border: 1px solid violet; */
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.container1 .image0,
+.container1 .name0,
+.container1 .social {
+    width: 200px;
+    text-align: center;
+    font-family: var(--fontElMessiri);
+    margin-top: 20px;
+}
+
+.container1 .image0 img {
+    margin: 50px auto 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid rgb(207, 207, 207);
+}
+
+.container1 .side2 h3 {
+    text-align: center;
+}
+
+.container1 hr {
+    border: 2px solid white;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.container1 .social a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 8px;
+}
+
+.container1 .info0 {
+    background-color: rgb(248, 248, 248);
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.container1 .info0 h2,
+.container1 .info0 h3,
+.container1 .info0 p {
+    color: #00494e;
+    text-align: right;
+}
+
+.container1 .about,
+.container1 .personal {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    width: 650px;
+    padding: 10 50 10 10;
+    box-shadow: 1px 1px 10px rgba(139, 139, 139, 0.2);
+    border-radius: 10px;
+    font-family: var(--fontElMessiri)
+}
+
+.container1 .about,
+.container1 .personal p {
+    font-family: var(--fontChanga);
+}
+
+.container1 .rig {
+    margin-top: 50px;
+}
+
+.container1 .rig img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+.container1 .rig p {
+    margin: 0px auto 10px;
+    display: inline-block;
+    vertical-align: 20px;
+    font-weight: bolder;
+    font-family: var(--fontElMessiri)
+}
+
+.container1 .personal ul {
+    display: flex;
+    padding-left: 0px;
+    list-style-type: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.container1 .side2 {
+    display: flex;
+    width: 220px;
+    margin: 50px auto;
+    /* border: 1px solid violet; */
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 30px;
+    
+    font-family: var(--fontElMessiri)
+}
+
+.container1 .side2 li {
+    display: flex;
+    margin: 5px;
+    background-color: rgb(207, 232, 253);
+    padding: 0px 5px 0 0;
+    border-radius: 5px;
+    border: 2px solid var(--sec);
+}
+
+.container1 .side2 li span {
+    display: flex;
+    color: var(--main-font);
+    padding: 5px 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.container1 .side2 ul {
+    display: flex;
+    margin: 0px 0px 20px;
+    width: 90%;
+    list-style-type: none;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.container1 .personal li {
+    display: flex;
+    color: rgb(10, 170, 191);
+    margin: 5px;
+    border-radius: 10px;
+    border: 2.5px solid rgb(10, 170, 191);
+}
+
+.container1 .personal li span {
+    
+    color: rgb(10, 170, 191);
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.container1 .personal li div {
+   
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    background-color: rgb(10, 170, 191);
+    border-radius: 0px 8px 8px 0px;
+}
+
+.container1 .personal h3,
+.container1 .personal h2 {
+    margin: 0px;
+    font-size: 30px;
+}
+
+.container1 .name h2,
+.container1 .side2 h3 {
+    text-align: center;
+    font-size: 20px;
+}

@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
     <link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-    <!-- MY CSS -->
+    
     <link rel="stylesheet" href="<?php echo $this->_static("css/myStyle.css");?>">
-    <link rel="stylesheet" href="<?php echo $this->_static("css/profileStyle.css");?>">
+  <link rel="stylesheet" href="<?php echo $this->_static("css/pro.css");?>">
 
 </head>
 

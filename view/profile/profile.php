@@ -39,7 +39,7 @@
                 <p>
                     <ul>
                         <li> <div>الاسم الكامل:</div>
-                            <span>  مصطفى عبد الكريم سليم</span>
+                            <span><?php echo $this->db['fullName'];?></span>
                         </li>
                         <li><div>تاريخ الميلاد:</div>
                             <span>1985</span>

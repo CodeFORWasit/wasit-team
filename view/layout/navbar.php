@@ -25,5 +25,5 @@
         ?>
         </ul>
     </div>
-    <a class="navbar-brand ml-auto navbar-right js-scroll-trigger " href="/shoping">البرمجة من اجل العراق | فريق واسط</a>
+    <a class="navbar-brand ml-auto navbar-right js-scroll-trigger " href="#">البرمجة من اجل العراق | فريق واسط</a>
 </nav>

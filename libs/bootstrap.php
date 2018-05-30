@@ -3,48 +3,39 @@
 
 
 class Bootstrap{
-       
-    private $_controler = null;
-    private $_index     = "controler/index.php"; 
 
-    public function __construct() {
-        
-        if (URL){
-            $_url = explode("/", rtrim(URL,"/"));
+    // Contorller 
+    private $_ctrl = null;
+    function __construct() {
+        // Check if null or string' "/" '
+        if (URL != null){
 
-            $classs = array_shift($_url);
-            $file = 'controler/'.$classs.".php";
-            if (file_exists($file)){
-                require $file;
-                $this->Loader($classs,$_url);
-            }else{
-                $this->LoaderIndex();
-            }
-        }else{
-            $this->LoaderIndex(); 
-        }
-    }
-    function LoaderIndex(){
-        require $this->_index;
-        $this->_controler = new index;
-        $this->_controler->{"index"}();
-    }
-        
-    function Loader($cl,$argv){
-        
-        $this->_controler = new $cl;
-        $this->_controler->loadModel($cl);
-        
-        if(isset($argv[0]) && method_exists($this->_controler, $argv[0])){
-            $this->_controler->{array_shift($argv)}($argv);
-        }else{
-             $this->_controler->index($argv);
-        } 
+            $argv = explode("/", trim(URL,"/"));
+            $cls  = array_shift($argv);
+            $file_ctrl = CTRL.$cls.".php";
+            if (file_exists($file_ctrl)){
+                require $file_ctrl;
+                $this->requireCtrl($cls,$argv);
 
-    }
+            }else{$this->defaultPage(INDEX);}
+        }else{$this->defaultPage(INDEX);}
         
-    function error(){
-        echo "Error Pages Not Found";
-        return 0;
     }
+
+    // require Contorller Page from Folder controller 
+    function requireCtrl($cls,$argv){
+        
+        $this->_ctrl = new $cls;
+        $this->_ctrl->loadModel($cls);
+        $func = (isset($argv[0]) && method_exists($this->_ctrl, $argv[0])) ? array_shift($argv) : "index";
+        $this->_ctrl->{$func}($argv);
+        
+    }
+
+    function defaultPage($main){
+        require CTRL.$main.".php";
+        $this->_ctrl = new $main;
+        $this->_ctrl->{'index'}();
+    }
+
 }

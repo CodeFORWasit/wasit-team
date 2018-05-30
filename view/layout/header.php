@@ -2,24 +2,30 @@
 <html lang="en">
 
 <head>
-    <title><?php echo $this->_title?></title>
+    
+    <meta charset="UTF-8">
+    
+    <title><?php echo $this->_title ?></title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
 
-
     <!-- fonts -->
+     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El Messiri">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
-    <link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="<?php echo $this->_static("css/myStyle.css");?>">
     <link rel="stylesheet" href="<?php echo $this->_static("css/profileStyle.css");?>">
+    <link rel="stylesheet" href="<?php echo $this->_static("css/create.css");?>">
+
+
 
 </head>
 
@@ -27,5 +33,3 @@
 
  <?php $this->render("layout/navbar"); ?>
  
- <br>
- <br>

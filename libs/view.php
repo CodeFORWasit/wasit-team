@@ -2,29 +2,30 @@
 
 class View {
         
-    public $_title = "ًWasite Team";
-    public $_argv = array();
+    public $_title = "Code For Wasit";
     
     
     function render($body,$_header=null,$_foter=null){
+
         if ($_header != null){
-            require 'view/'.$_header.".php";
+            require VIEW.$_header.".php";
         }
         
-        require 'view/'.$body.".php";
+        require VIEW.$body.".php";
         
         if ($_foter != null){
-            require 'view/'.$_foter.".php";
+            require VIEW.$_foter.".php";
         }
 
     }
     
     function _static($name){
-        return "/wasit-team/public/".$name;
+        return M_PATH.STATICS.$name;
     }
 
     function redirect($path){
-        header("Location:/wasit-team/$path");
+        header("Location:".M_PATH.$path);
+        exit();
     }
     
 }

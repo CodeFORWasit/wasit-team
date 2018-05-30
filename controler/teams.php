@@ -1,37 +1,37 @@
 <?php
 
-class teams extends Controler{
+    class teams extends Controler{
 
-    public function __construct() {
-        parent::__construct();
-    }
+        public function __construct() {
+            parent::__construct();
+        }
 
-    function index($user){
-        
-        # Title Page
-        if (count($user) == 1 && !empty($user[0])){
+        // Main PAGE FOR ' class teams ' 
+        // route " teams/ "
+        function index(){
+            # set TIEL PAGE 
+            $this->view->_title = "WASIT TEAMS";
+            $this->view->db = $this->model->select(); 
 
-            $this->view->_title = strtoupper($user[0]);
-            $this->view->db = $this->model->selectByUser($user[0]);
+            $this->view->_navbar = array(
+                M_PATH => "الرئيسه"
+            );
+            
+            if( !isset($_SESSION['login'])  ){
+                $this->view->_navbar['log/in'] = "تسجيل دخول";
+                
+            }else{
+                $this->view->_navbar['log/out'] = "تسجيل خروج";
+                
+            }
+
+            # set VIEW PAGE 
             $this->view->render(
-                "profile/profile",
+                "teams",
                 $_header="layout/header",
                 $_foter="layout/footer"
             );
-
         }
-        else{
-                $this->view->_title = "WASIT TEAMS";
-                $this->view->db = $this->model->select();
-                $this->view->render(
-                    "teams",
-                    $_header="layout/header",
-                    $_foter="layout/footer"
-                );
-        }
-
-
     }
 
-    
-}
+?>

@@ -5,98 +5,55 @@ class create extends Controler{
     public function __construct() {
         parent::__construct();
     }
-    function index(){
+    // Main PAGE FOR ' class create '    
+    // route " create/ "
+    function index($argv){
+        
         # Title Page
         $this->view->_title = "Create Profile";
-
+        # NAVBAR ul->li
         $this->view->_navbar  = array(
-            "/shoping/#services" => "الخدمات",
-            "/shoping/#about"    => "مسارنا",
-            "/shoping/teams"     => "الفريق",
-            "/shoping/#regester" => "التسجيل"
+            M_PATH     => "الرئسية",
+            "log/in"  => "login",
         );
-        # Body 
-        $this->view->render(
-            "profile/create_profile",
-            $_header="layout/header",
-            $_foter="layout/footer"
-        );
-    }
-    function send(){
+        // Create new Token         
         
-        if (isset($_POST['email_c4i'])){
+//  if( isset($_SESSION['usersave']) && !isset($_POST['create']) ){session_destroy();}
+        
+        if ( $this->method == "POST" && isset($_POST['create']) && isset($_SESSION['signup'])){
+                
+                $this->model->uploade_image($_FILES['file']);
+                $this->model->Insert($_POST);
+                setcookie($_SESSION,$value=$_POST['fullname']);
+                session_destroy();       
+                $this->view->redirect("teams");
+                 
+        }elseif( isset($_SESSION['signup']) && !$this->model->isProfile($_SESSION['username']) ){
 
-            if(preg_match("/^[a-z\.]+@codeforiraq.org$/", $_POST['email_c4i'])){
-                $this->view->tkn = $this->model->get_tkn($_POST["email_c4i"]);
-                $this->view->render("profile/create_profile" );
-
-            }else{
-
-                echo "error";
-                if (!preg_match("/^[a-zA-Z\.\_]+@[a-z].+$/", $_POST['email_c4i'])){
-                    echo 'هذا مو اميل عزيزي انت ';
-                }else{
-                    echo ' الا ميل غلط عزيزي انت '; 
-                }
-
-            }
-        }else{ echo "error";echo ' لم تقم بدخال الاميل الخاص بيك ';}
-
+            $this->view->render(
+                "profile/create",
+                $_header="layout/header",
+                $_foter="layout/footer"
+            );
+                  
+        }else{ $this->view->redirect("signup");  } 
+        
     }
     
-    function create_profile(){
-        if (!empty($_POST)){
-            if ($_POST['hcode'] == $_SESSION['token']){
+    
+    function token($argv){
+        if( isset($argv[0]) && isset($argv[1]) && isset($_SESSION['fullName']) ){
+            $token = sha1(md5($argv[1]."Wisat#Iraq".$_SESSION['fullName']));//.getdate()['minutes']);
+            if ( $token == $argv[0] ){
+                
+                $this->view->redirect("create");
+            }else{
 
-                $string = "";
-                foreach ($_POST as $key => $value) {
-                    if(empty($value)){
-                        if($key == "about"){
-                             $string .= "  $('textarea[id=".$key."]').addClass('is-invalid');";
-                        }else{
-                            $string .= "  $('input[id=".$key."]').addClass('is-invalid');";
-                        }
-                    }
-
-                }
-
-                // 
-                if( empty($_FILES["file"]['name']) || (explode("/", $_FILES["file"]['type'])[0] != "image") ) {
-                    $string .= "  $('label[id=file]').removeClass('btn-outline-primary').addClass('btn-outline-danger');";
-                }
-
-                // 
-                if (!empty($string)){
-                    echo "error $('input').removeClass('is-invalid');  $('label[id=file]').removeClass('btn-outline-danger').addClass('btn-outline-primary'); ".$string." $('#text-suc-err').text(' املا جميع الحقول ');";
-                }else{
-                    $about = str_replace("/\\n/", "<br>", $_POST['about']);
-                    $user  = explode("@", $_SESSION['email'])[0];
-                    $imgname = $user.".".explode(".", $_FILES['file']['name'])[1];
-
-                    if($this->model->Insert(   
-                        $user,
-                        $_POST['fullname'],
-                        $_SESSION['email'],
-                        $_POST['city'],
-                        $_POST['phone'],
-                        $about,
-                        $_POST['langProg'],
-                        $imgname,
-                        $_POST['facebook'],
-                        $_POST['github']
-                    )){move_uploaded_file($_FILES['file']["tmp_name"], "public/img/team/".$imgname);}
-                }
-            }else{ 
-                echo "error
-                $(\"input[id=hcode]\").addClass('is-invalid')
-                $('#text-suc-err').text(' الهاش كود لتفعيل البروفايل خطا ');"; 
-            }
-
-
-        }else{
-            echo "error ";
-        }
-
+                $this->view->redirect("signup"); 
+            }  
+        }else{  $this->view->redirect("signup");  }   
     }
-
+    
+    
+  
 }

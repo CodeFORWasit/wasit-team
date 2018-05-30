@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 13, 2018 at 12:24 PM
+-- Generation Time: May 27, 2018 at 04:38 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -23,29 +23,76 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `team_profile`
+-- Table structure for table `profiles`
 --
 
-CREATE TABLE `team_profile` (
-  `user` varchar(30) NOT NULL,
-  `fullName` varchar(30) CHARACTER SET utf8mb4 NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `city` text CHARACTER SET utf8mb4 NOT NULL,
-  `phone` int(12) NOT NULL,
-  `about` text CHARACTER SET utf8mb4 NOT NULL,
-  `langProg` varchar(50) CHARACTER SET utf8mb4 NOT NULL,
-  `img` text NOT NULL,
-  `fb` text NOT NULL,
-  `github` text NOT NULL
+CREATE TABLE `profiles` (
+  `username` varchar(40) NOT NULL,
+  `fullName` varchar(30) CHARACTER SET utf8 NOT NULL,
+  `borth_day` varchar(20) DEFAULT NULL,
+  `city` varchar(20) CHARACTER SET utf8 DEFAULT NULL,
+  `gander` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
+  `telephone` varchar(20) DEFAULT NULL,
+  `languageProgam` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `about` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `skile` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `image_profile` varchar(40) DEFAULT NULL,
+  `url_feacbook` varchar(30) DEFAULT NULL,
+  `url_github` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `team_profile`
+-- Dumping data for table `profiles`
 --
 
-INSERT INTO `team_profile` (`user`, `fullName`, `email`, `city`, `phone`, `about`, `langProg`, `img`, `fb`, `github`) VALUES
-('alaa.akiel', 'Alaa Akiel', 'alaa.akiel@codeforiraq.org', 'الكوت', 2147483647, 'shfjklhalskdfh\r\nashdfaklshdfk\r\naskdhfalksfhjk', 'python,php,javascript', 'alaa.akiel.jpg', 'alaa.akile', 'alaaProg');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(3) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `status` int(2) NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `profiles`
+--
+ALTER TABLE `profiles`
+  ADD PRIMARY KEY (`username`),
+  ADD UNIQUE KEY `username` (`username`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `UNIQUE` (`username`),
+  ADD KEY `id` (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -5,8 +5,8 @@ class create extends Controler{
     public function __construct() {
         parent::__construct();
     }
-    // Main PAGE FOR ' class create '    
-    // route " create/ "
+ 
+    // route /create/
     function index($argv){
         
         # Title Page
@@ -17,9 +17,7 @@ class create extends Controler{
             "log/in"  => "login",
         );
         // Create new Token         
-        
-//  if( isset($_SESSION['usersave']) && !isset($_POST['create']) ){session_destroy();}
-        
+
         if ( $this->method == "POST" && isset($_POST['create']) && isset($_SESSION['signup'])){
                 
                 $this->model->uploade_image($_FILES['file']);

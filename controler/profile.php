@@ -19,7 +19,7 @@ class profile extends Controler{
                 
                 $this->view->_navbar  = array(
                     M_PATH             => "الرئسية",
-                    M_PATH."teams"     => "الفريق",
+                    M_PATH."/teams"          => "الفريق",
                 );
                 
                 if( isset($_SESSION['login']) && $argv[0] == $_SESSION['user'] ) {

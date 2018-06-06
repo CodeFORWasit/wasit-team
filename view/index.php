@@ -172,10 +172,29 @@
                     اذا كنت من سكنة محافظة واسط وتمتلك الرغبة في ان تكون فردا منتجا وتحب الخير لمجتمعك
                 </h2>
                 <h2>
-                    يمكنك ارسال رسالة الى
-                    <br>
-                    <span>nael.fadhil@codeforiraq.org</span>
-                    <br> تتضمن سيرتك الذاتية مهما كانت وسيتم التواصل معك في اقرب وقت ممكن
+                    يمكنك الانضمام من هنا 
+                    
+                    <div class="container">
+                        <form style="margin-top: 10px;"
+                            class="col-md-6 offset-md-3" 
+                            id="reg" method="post" 
+                            action='regester' enctype="multipart/form-data"
+                            dir='rtl' class="form-inline"
+                        >
+                        <div class="form-group ">
+                            <input type="email" name="regEmail" required="" autocomplete="off" placeholder="الاميل " class="form-control" id="mail" value="">
+                            </div>
+                            <div class="form-group" dir="ltr">
+                                  <div class="input-group">
+                                      <input type="text" class="form-control " id="img" autocomplete="off" dir="rtl" placeholder="السيره الذاتيه  .doc او .pdf" name="cvfile" id='cv' />
+                                      <label class="form-control btn btn-primary col-2" id='file'>
+                                          <input type="file" name="file" hidden> تحميل 
+                                      </label>
+                                  </div>
+                            </div>
+                            <button type="submit" value="registry" class="btn btn-primary"> تسجيل </button>
+                        </form>
+                    </div>
                 </h2>
             </p>
         </div>

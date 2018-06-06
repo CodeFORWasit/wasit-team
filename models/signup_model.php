@@ -75,13 +75,17 @@ class signup_model extends Model{
                         . 'اكمل عمليت التسجيل'
                         . '</a>'
                     . '</div>'
-                . ''   
+                . ""
                 ;
         
-        $headers = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-        $headers .= 'From: alaa.21.iraq@gmail.com' . "\r\n";
+        $headers = 'Content-type: text/html; charset=utf-8' . "\r\n";
+        $headers .= 'From: '.EMAIL_WEBSITE. "\r\n";
         mail($email, "Code For Iraq <Wasit Teams>", $body, $headers); 
         return $body;
     }
- 
+
+    
+    
+
+    
 }

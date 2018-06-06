@@ -1,9 +1,10 @@
 php_flag display_errors on
+DirectoryIndex index.php
 
 RewriteEngine On
 
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^(.+)$ index.php?url=$1 [L]
 
-RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+RewriteRule !^(public/|index.php) [NC,F]

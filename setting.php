@@ -11,9 +11,11 @@
     // Main url 
     define('URL', isset($_GET['url']) ? array_shift($_GET) : null);
 
-    // main Path 
-    define('M_PATH',"/c4w/"); 
-
+    // Email site 
+    // EMAIL:code4iraqh@gmail.com || PASS :Code@Iraq
+    define("EMAIL_WEBSITE",'code4iraqh@gmail.com');
+    // Main Path 
+    define('M_PATH',"http://localhost/wasit-team/"); 
     // Main View  ( function  Index ) from all Controller
     define("INDEX","index");
        

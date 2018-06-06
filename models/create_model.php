@@ -35,14 +35,16 @@ class create_model extends Model{
     }
     
     function uploade_image($file){
-       if ( isset($file['name']) && !empty($file['name'])) {
-            $image = "public/img/team/".$_SESSION['username'].".".explode(".",$file['name'])[1];
-            if (!file_exists($image)){
-                 move_uploaded_file($file['tmp_name'],$image);
-            }
-            $this->path_image = $_SESSION['username'].".".explode(".",$file['name'])[1];
-            
-       }else { $this->path_image = "default.jpg"; }
+        if($file['type'] != "image/type"){
+            if ( isset($file['name']) && !empty($file['name']) ) {
+                 $image = "public/img/team/".$_SESSION['username'].".".explode(".",$file['name'])[1];
+                 if (!file_exists($image)){
+                      move_uploaded_file($file['tmp_name'],$image);
+                 }
+                 $this->path_image = $_SESSION['username'].".".explode(".",$file['name'])[1];
+
+            }else { $this->path_image = "default.jpg"; }
+        }
     }
 
     function isProfile($user){

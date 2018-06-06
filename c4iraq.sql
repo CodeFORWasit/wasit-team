@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 27, 2018 at 04:38 PM
+-- Generation Time: May 21, 2018 at 01:17 PM
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 7.0.9
 
@@ -34,17 +34,12 @@ CREATE TABLE `profiles` (
   `gander` varchar(10) CHARACTER SET utf8 DEFAULT NULL,
   `telephone` varchar(20) DEFAULT NULL,
   `languageProgam` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
-  `about` varchar(500) CHARACTER SET utf8 DEFAULT NULL,
+  `about` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `skile` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
   `image_profile` varchar(40) DEFAULT NULL,
   `url_feacbook` varchar(30) DEFAULT NULL,
-  `url_github` varchar(30) DEFAULT NULL
+  `url_github` int(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `profiles`
---
-
 
 -- --------------------------------------------------------
 
@@ -61,20 +56,8 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `users`
---
-
-
---
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `profiles`
---
-ALTER TABLE `profiles`
-  ADD PRIMARY KEY (`username`),
-  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- Indexes for table `users`
@@ -92,7 +75,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

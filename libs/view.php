@@ -23,9 +23,8 @@ class View {
         return M_PATH.STATICS.$name;
     }
 
-    function redirect($path){
-        header("Location:".M_PATH.$path);
-        exit();
+    function redirect($path,$time=0){
+        header("Refresh:$time; url=".M_PATH.$path);
     }
     
 }

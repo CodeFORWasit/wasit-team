@@ -15,7 +15,7 @@
 
             ?>
                 <li class="">
-                    <a class="nav-link js-scroll-trigger" href="<?php echo $key ?>">
+                    <a class="nav-link js-scroll-trigger " href="<?php echo $key ?>">
                         <?php echo $value ?>
                     </a>
                 </li>
@@ -25,6 +25,6 @@
             ?>
         </ul>
     </div>
-     <a class="navbar-brand ml-auto navbar-right js-scroll-trigger " href="/c4w">البرمجة من اجل العراق | فريق واسط</a>
-   
+     
+   <a class="navbar-brand ml-auto  js-scroll-trigger " href="/c4w">البرمجة من اجل العراق | فريق واسط</a>
 </nav>

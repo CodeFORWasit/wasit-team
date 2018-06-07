@@ -243,7 +243,7 @@
             <div class="row">
 
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white  card card-body bg-white-lg text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>Telegram</h4>
                         <a href="https://t.me/joinchat/FUUykBBr89kXaEUtslu2dw"target="_blank">
                             <img src="https://cdn2.iconfinder.com/data/icons/telegram/154/logotype-telegram-round-blue-logo-512.png" style="height: 90px;">
@@ -251,7 +251,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>Facebook</h4>
                         <a href="https://www.facebook.com/groups/codeForWasit"target="_blank">
                             <img src="https://www.moit.gov.ye/moit/sites/default/files/u54/facebook.png" style="height: 90px;">
@@ -259,7 +259,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>Zoom us</h4>
                         <a href="https://zoom.us/signup"target="_blank">
                             <img src="https://images-na.ssl-images-amazon.com/images/I/51MUT2C7exL.png" style="height: 90px;">
@@ -267,7 +267,7 @@
                     </div>
                 </div>
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>BlueMail</h4>
                         <a href="https://bluemail.me"target="_blank">
                             <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Google_Inbox_by_Gmail_logo.png" style="height: 90px;">
@@ -276,7 +276,7 @@
                 </div>
 
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>Github</h4>
                         <a href="https://github.com/CodeFORWasit"target="_blank">
                             <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" style="height: 90px;">
@@ -285,7 +285,7 @@
                 </div>
 
                 <div class="col-sm-2 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h4>Discord</h4>
                         <a href="https://discord.gg/qN3QwSs"target="_blank">
                             <img src="https://www.shareicon.net/data/512x512/2017/06/21/887435_logo_512x512.png" style="height: 90px;">
@@ -293,8 +293,9 @@
                     </div>
                 </div>
 
+            
                 <div class="col-sm-12 " style="font-size:6em; color:teal; background-color: white">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class=" my-5 card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <h3>C4I Platform</h3>
                         <a href="https://c4i.herokuapp.com" target="_blank">
                             <img src="http://codeforiraq.org/wp-content/uploads/2018/04/4f.png" style="height: 250px;">
@@ -302,21 +303,14 @@
                         <h3>You Need to Signup in Code for Iraq Platform </h3>
                         <h4 style=" color:rgb(255, 2, 15); ">Use your special "your.name@codeforiraq.org" to register </h4>
                     </div>
+                
                 </div>
-
-
 
             </div>
 
-
-
-
-
-
-
             <div class="row">
                 <div class="col-md-12">
-                    <div class="well text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
+                    <div class="card card-body bg-white text-center" style="background-color: white; box-shadow: 0px 2px 20px  rgb(218, 218, 218)  ">
                         <div class="page-header">
                             <h1>Web Developer Learning Path</h1>
                         </div>

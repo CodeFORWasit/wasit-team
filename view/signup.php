@@ -9,10 +9,10 @@
         <!-- GROUP 1 -->
         
         <div class="alert alert-warning msg-err text-right" id="pwd"  >       
-           يجب ان يكون الباسورد مكون من الاحرف والرموز فقط 
+           يجب ان تكون كلمة المرور مكونة من الاحرف والرموز فقط 
         </div>
         <div class="alert alert-warning msg-err text-right" id="mail" >       
-           الاميل الذي قمت بدخاله غير صحيح  
+           البريد الاليكتروني الذي قمت بدخاله غير صحيح  
         </div>
         
         <div class="form-group">

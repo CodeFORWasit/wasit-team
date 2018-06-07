@@ -6,10 +6,10 @@
      font-size:30px;padding: 15px;background-color: #333;color:white;
      border-radius: 1%;text-shadow:0 0 10px white;
      " > 
-        مرحبا بيك 
-        <?php echo "alaa.21.iraq@gmail.com"//$_POST['regEmail']; ?> 
-        بفريق Code For Iraq <br>
-        سيقوم منجر الفريق بمراسلاتك باقرب وقت
+        مرحبا بك معنا 
+        <!-- <?php echo "alaa.21.iraq@gmail.com"//$_POST['regEmail']; ?>  -->
+         <br>
+        سيتم التواصل معك في اقرب وقت 
         
     </div>
 
@@ -35,7 +35,7 @@
             <div class="input-group">
                 <input type="text" class="form-control " id="img" autocomplete="off" dir="rtl" placeholder="السيره الذاتيه  .doc او .pdf" name="cvfile" id='cv' />
                 <label class="form-control btn btn-primary col-2" id='file'>
-                    <input type="file" name="file" hidden> تحميل 
+                    <input type="file" name="file" hidden> اختر السيرة الذاتية 
                 </label>
             </div>
         </div>

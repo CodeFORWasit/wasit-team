@@ -26,7 +26,7 @@
 
         <div class="info0 ">
             <div class="rig" dir="ltr">
-                <img src="<?php echo $this->_static("img/team/".$this->data['image_profile']); ?>" alt="">
+                <img src="<?php echo $this->_static("img/about/4.png"); ?>" alt="">
                 <p>الملف الشخصي</p> 
 
             </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="side2">
             <div class="name">
-                <h2> لغات البرمجه </h2>
+                <h2> لغات البرمجة </h2>
                 <hr>
             </div>
                 <ul>
@@ -76,10 +76,11 @@
                         </li>
                     <?php }  ?> 
                 </ul>
+<br>
 
-            <h3> فريمورك و مكتبه تجيدها</h3>
-            <hr>
-            <p>
+            <h2> فريمورك و مكتبه تجيدها</h2>
+         <hr>
+            
                 <ul>
                     <?php foreach(explode(",", $this->data['skile']) as $skil){  ?> 
                         <li>
@@ -87,6 +88,6 @@
                         </li>
                     <?php }  ?>  
                 </ul>
-            </p>
+           
         </div>
     </div>

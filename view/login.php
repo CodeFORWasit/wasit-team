@@ -3,7 +3,7 @@
     <form class="col-md-6 offset-md-3 form-control" id="from_login" method="post" action='in' style="padding:20px;"  dir="rtl">
             
                 <div class="alert alert-danger msg-err text-right" style="display: <?php echo $this->Error; ?>">
-                   خطاء ب الاميل او الباسورد 
+                   خطاء .. البريد الالكتروني  او رمزالمرور 
                 </div>
 
 		<div class="form-group">

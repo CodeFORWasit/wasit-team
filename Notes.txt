@@ -1,0 +1,13 @@
+ رابط الكيتهب  يؤدي الى صفحة الاعضاء وليس الى الموقع المذكور
+ عند الضغط عى فريق واسط| البرمجة من اجل العراق في الناف بار يظهر خطأ
+
+عند ارسال طلب الانضمام تظهر هذه الرسالة 
+Warning: mail(): Failed to connect to mailserver at "localhost" port 25, verify your "SMTP" and "smtp_port" setting in php.ini or use ini_set() in C:\xampp\htdocs\wasit-team\models\regester_model.php on line 21
+
+    
+
+لايوجد قاعدة بيانات تحتفظ بالسيرة الشخصية او ايميلات طالبي الانضمام
+
+روابط مهمة يجب ان لا تظهر الا بعد تسجيل الدخول
+
+عند تعديل البيانات  الجنس  والمدينة .. ورابط الكيتهب ترجع الى الصفر

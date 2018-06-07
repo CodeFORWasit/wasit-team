@@ -22,7 +22,7 @@ class index extends Controler{
                 "#services" => "الخدمات",
                 "#about"    => "مسارنا",
                 "teams"     => "الفريق",
-                "links"     => "links",
+                "links"     => "روابط مهمة",
                 "#regester" => "التسجيل"
         );
 

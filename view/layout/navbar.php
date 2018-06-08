@@ -12,7 +12,6 @@
             <?php 
                 if (isset($this->_navbar)){
                     foreach ($this->_navbar as $key => $value) {
-
             ?>
                 <li class="">
                     <a class="nav-link js-scroll-trigger " href="<?php echo $key ?>">
@@ -26,5 +25,5 @@
         </ul>
     </div>
      
-   <a class="navbar-brand ml-auto  js-scroll-trigger " href="/c4w">البرمجة من اجل العراق | فريق واسط</a>
+   <a class="navbar-brand ml-auto  js-scroll-trigger " href="<?php echo M_PATH; ?>">البرمجة من اجل العراق | فريق واسط</a>
 </nav>

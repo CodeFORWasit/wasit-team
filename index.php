@@ -11,6 +11,7 @@
        // include all librarys From Folder ' libs '
        require LIB.strtolower($name).".php";
     });
-//    session_destroy();
+    
+#   session_destroy();
     new Bootstrap();
 ?>

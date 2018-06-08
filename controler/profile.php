@@ -19,12 +19,14 @@ class profile extends Controler{
                 
                 $this->view->_navbar  = array(
                     M_PATH             => "الرئسية",
-                    M_PATH."/teams"          => "الفريق",
+                    M_PATH."/teams"    => "الفريق",
                 );
                 
-                if( isset($_SESSION['login']) && $argv[0] == $_SESSION['user'] ) {
-                    $this->view->_navbar['edit'] = "تعديل"; 
+                if( isset($_SESSION['login']) ) {
+                    $this->view->_navbar['edit'] = "تعديل";
+                    $this->view->_navbar[M_PATH.'/links'] = "روابط مهمه";
                 }
+                
                 
                 # requer View
                 $this->view->render(

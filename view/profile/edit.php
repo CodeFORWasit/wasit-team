@@ -17,30 +17,6 @@
         </div>
         
         
-    
-        <div class="form-group">
-            <select id="inputState" class="form-control" name="gander" >
-                
-                <option selected>الجنس</option>
-                <option>ذكر</option>
-                <option>انثى</option>
-                
-            </select>
-        </div>
-
-
-
-        <div class="form-group">
-            <select id="inputState" class="form-control" name="city">
-                <option selected>المدينة</option>
-                <option>الكوت</option>
-                <option>الحي</option>
-                <option>الصويره</option>
-                <option>بدرة</option>
-                <option>النعمانية</option>
-                <option>العزيزية</option>
-            </select>
-        </div>
 
         <div class="form-group">
             <input type="telephone" value="<?php echo $this->db['telephone'];  ?>" id='telephone'  class="form-control input-lg" name="telephone" placeholder="رقم الموبايل " >

@@ -13,8 +13,7 @@ class profile_model extends Model{
     function updateByUser($data){
         $update = $this->_dbs->prepare("UPDATE profiles SET"
                 . "`fullName`=:fullName,"
-                . " `borth_day`=:borth_day, `city`=:city,"
-                . "`gander`=:gander, `telephone`=:telephone,"
+                . " `borth_day`=:borth_day, `telephone`=:telephone,"
                 . "`languageProgam`=:languageProgam, `about`=:about,"
                 . " `skile`=:skile, `image_profile`=:image_profile, "
                 . "`url_feacbook`=:url_feacbook, `url_github`=:url_github"
@@ -25,8 +24,8 @@ class profile_model extends Model{
         $update->bindParam(':username'      ,    $_SESSION['user']       ); # 1
         $update->bindParam(':fullName'      ,    $data["fullname"]       ); # 2
         $update->bindParam(':borth_day'     ,    $data["borth_day"]      ); # 3
-        $update->bindParam(':city'          ,    $data["city"]           ); # 4
-        $update->bindParam(':gander'        ,    $data["gander"]         ); # 5
+//        $update->bindParam(':city'          ,    $data["city"]           ); # 4
+//        $update->bindParam(':gander'        ,    $data["gander"]         ); # 5 
         $update->bindParam(':telephone'     ,    $data["telephone"]      ); # 6
         $update->bindParam(':languageProgam',    $data["languageProgam"] ); # 7
         $update->bindParam(':about'         ,    $data["about"]          ); # 8

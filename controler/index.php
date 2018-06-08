@@ -22,9 +22,14 @@ class index extends Controler{
                 "#services" => "الخدمات",
                 "#about"    => "مسارنا",
                 "teams"     => "الفريق",
-                "links"     => "روابط مهمة",
+                
                 "#regester" => "التسجيل"
         );
+        
+        if( isset( $_SESSION['login']) ) {
+            $this->view->_navbar['links'] = "روابط مهمه";
+        }
+        
 
         #  VIEW FILE  
         $this->view->render(

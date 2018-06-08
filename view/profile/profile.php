@@ -10,11 +10,12 @@
             </div>
             <div class="social">
                 
-                <a href="<?php echo $this->data['url_github']; ?>"><i class="fab fa-github fa-3x"></i></a>
-                <a href="<?php echo $this->data['url_feacbook'];  ?>"><i class="fab fa-facebook fa-3x"></i></a>
-<!--                <a href="#"><i class="fab fa-linkedin fa-3x"></i></a>-->
+                <a href="<?php echo $this->data['url_github']; ?>"><i class="fab fa-github fa-3x"></i>G</a>
+                <a href="<?php echo $this->data['url_feacbook'];  ?>"><i class="fab fa-facebook fa-3x"></i>F</a>
+                <!-- <a href="#"><i class="fab fa-linkedin fa-3x"></i></a> -->
                 
             </div>
+            
             <div class="name0">
                 <h2> <?php echo $this->data['fullName'];  ?> </h2>
                 <hr>

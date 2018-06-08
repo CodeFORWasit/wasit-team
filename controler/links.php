@@ -16,9 +16,10 @@ class links extends Controler{
         $this->view->_navbar  = array(
             M_PATH   => "الرئسية",
             M_PATH."teams"  => "الفريق",
+            M_PATH."profile/".$_SESSION['user'] => "الملف الشخصي ",
             
         );
-        
+         
         # Body 
         $this->view->render(
             "links",
